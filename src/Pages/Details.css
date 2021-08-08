@@ -1,0 +1,31 @@
+.Details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Inter";
+  color: white;
+}
+
+.Details_button {
+  min-width: 300px;
+  padding: 17px 30px;
+  margin-top: 20px;
+  background: #1e5e9d;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Inter";
+  border-radius: 3px;
+}
+.Details_button:hover {
+  background-color: #0069d9;
+}
+
+.user_name {
+  color: #8d0ada;
+}
+.text {
+  color: white;
+}

@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import background from "./hero-banner.png";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Register from "./Pages/Register";
+import Details from "./Pages/Details";
+import Quotes from "./Pages/Quotes";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router style={{ backgroundImage: `url(${background})` }}>
+      <Switch>
+        <Route exact path="/" component={Register} />
+        <Route exact path="/details" component={Details} />
+        <Route exact path="/quotes" component={Quotes} />
+      </Switch>
+    </Router>
   );
 }
 
